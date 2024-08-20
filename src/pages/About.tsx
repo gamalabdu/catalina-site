@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import lawyerPhoto from '../assets/lawyer.jpg';
+import catalinaPhoto from '../assets/catalina.png'
 import "leaflet/dist/leaflet.css";
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import lawAward1 from '../assets/lawAward2.jpeg'
@@ -22,7 +23,8 @@ const About = () => {
         <div className="w-full lg:w-[70%] bg-white p-8 rounded-lg">
           <div className="relative">
             <img
-              src={lawyerPhoto}
+              // src={lawyerPhoto}
+              src={catalinaPhoto}
               alt="Lawyer"
               className="w-full lg:w-[300px] h-auto mb-4 lg:mb-2 lg:float-left lg:mr-4 rounded-lg"
             />
@@ -97,7 +99,7 @@ const About = () => {
           {/* Map Container 1 */}
           <div className="w-full h-[200px] sm:h-[300px] mb-6">
             <div className='font-semibold text-sm'>9440 S Santa Monica Blvd, Beverly Hills, CA 90210</div>
-            <MapContainer center={position1} zoom={15} scrollWheelZoom={false} className="w-full h-full rounded-lg">
+            <MapContainer center={position1} zoom={15} scrollWheelZoom={false} className="w-full h-full rounded-lg z-0">
               <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
@@ -110,7 +112,7 @@ const About = () => {
           {/* Map Container 2 */}
           <div className="w-full h-[200px] sm:h-[300px] mb-6">
             <div className='font-semibold text-sm'>888 Prospect St, La Jolla, CA 92037</div>
-            <MapContainer center={position2} zoom={15} scrollWheelZoom={false} className="w-full h-full rounded-lg">
+            <MapContainer center={position2} zoom={15} scrollWheelZoom={false} className="w-full h-full rounded-lg z-0">
               <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
@@ -122,12 +124,10 @@ const About = () => {
 
           {/* Services Section */}
           <h1 className="underline font-bold text-xl mb-4">Our Services</h1>
-          <div className="bg-blue-950 flex flex-col items-center gap-5 p-2 rounded-md w-full text-lg font-bold text-neutral-100">
-            <Link to="/areasofpractice">Practice 1</Link>
-            <Link to="/areasofpractice">Practice 2</Link>
-            <Link to="/areasofpractice">Practice 3</Link>
-            <Link to="/areasofpractice">Practice 4</Link>
-            <Link to="/areasofpractice">Practice 5</Link>
+          <div className="bg-blue-950 flex flex-col gap-5 p-2 rounded-md w-full text-md font-bold text-neutral-100 text-left">
+            <Link to="/areasofpractice" className="hover:underline">Employment-Based Immigration </Link>
+            <Link to="/areasofpractice" className="hover:underline"> Non-Immigrant Options through Employment or Investment </Link>
+            <Link to="/areasofpractice" className="hover:underline">Permanent Residency Through Employment, Self-Petition or Investment</Link>
           </div>
 
         </div>
