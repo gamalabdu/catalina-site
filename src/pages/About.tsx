@@ -1,6 +1,5 @@
 
 import { Link } from "react-router-dom";
-import lawyerPhoto from '../assets/lawyer.jpg';
 import catalinaPhoto from '../assets/catalina.png'
 import "leaflet/dist/leaflet.css";
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
