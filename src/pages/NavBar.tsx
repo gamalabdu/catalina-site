@@ -8,7 +8,7 @@ const NavBar = () => {
         <div className="flex flex-row items-center align-middle justify-evenly h-full">
           <Link to='home' className="hover:text-neutral-400 cursor-pointer">Home</Link>
           <Link to='about' className="hover:text-neutral-400 cursor-pointer">About</Link>
-          <Link to='practices' className="hover:text-neutral-400 cursor-pointer">Areas Of Practice</Link>
+          <Link to='areasofpractice' className="hover:text-neutral-400 cursor-pointer">Areas Of Practice</Link>
         </div>
       </nav>
     );

@@ -21,16 +21,21 @@ const Home = () => {
     />
 
 
-     <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-white bg-black bg-opacity-50 gap-8">
+     <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-white bg-black bg-opacity-50 gap-10">
 
         <img src={lawLogo3} alt="Logo" className='law-logo' />
 
-        <h1 className="text-4xl font-bold">Catalina Leff</h1>
+        <h1 className="text-4xl font-bold">Leff Lawyers</h1>
 
-        <h2 className=" text-xl">
+        <h2 className="p-4 text-xl text-center">
             Providing Representation To Individuals, Families And Businesses
                 With Immigration Law Concerns
         </h2>
+
+        <div className='flex gap-16 text-lg font-semibold'>
+          <div> Beverly Hills, CA </div>
+          <div> La Jolla, San Diego County </div>
+        </div>
 
         <button onClick={ () => navigate('/about') } className='bg-blue-950 text-neutral-100 pt-2 pb-2 pl-4 pr-4 rounded-md font-bold hover:bg-slate-800'> Learn More </button>
 

@@ -6,9 +6,9 @@ const Main = () => {
   return (
     <div className="h-screen w-screen flex flex-col">
       <NavBar />
-      <div className="flex-grow">
-        <Outlet />
-      </div>
+        <div className="flex-grow">
+          <Outlet />
+        </div>
     </div>
   );
 }
