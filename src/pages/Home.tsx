@@ -22,7 +22,7 @@ const Home = () => {
     />
 
 
-     <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-white bg-black bg-opacity-50 gap-10">
+     <div className="absolute top-0 left-0 w-full h-[calc(100vh-60px)] flex flex-col items-center justify-center text-white bg-black bg-opacity-50 gap-10">
 
         <img src={lawLogo3} alt="Logo" className='law-logo' />
 
