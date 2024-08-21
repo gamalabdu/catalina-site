@@ -6,8 +6,8 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Home = () => {
 
-
     const navigate = useNavigate()
+
 
   return (
 
@@ -24,7 +24,7 @@ const Home = () => {
     />
 
 
-     <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-white bg-black bg-opacity-50 gap-10">
+     <div className="absolute top-0 left-0 w-full h-screen flex flex-col items-center justify-center text-white bg-black bg-opacity-50 gap-10">
 
         <img src={lawLogo3} alt="Logo" className='law-logo' />
 
