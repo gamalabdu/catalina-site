@@ -21,6 +21,7 @@ const Home = () => {
       autoPlay={true}
       loop 
       muted 
+      playsInline
     />
 
 
