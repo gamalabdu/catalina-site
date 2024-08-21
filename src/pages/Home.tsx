@@ -26,7 +26,7 @@ const Home = () => {
 
         <img src={lawLogo3} alt="Logo" className='law-logo' />
 
-        <h1 className="text-4xl font-bold">Leff Lawyers</h1>
+        <h1 className="text-4xl font-bold">Leff Law Group</h1>
 
         <h2 className="p-4 text-xl text-center">
             Providing Representation To Individuals, Families And Businesses
