@@ -11,10 +11,12 @@ const Home = () => {
 
   return (
 
-    <div className="h-[calc(100vh-60px)] w-full mt-[60px]">
+    <div className="h-[calc(100vh-60px)] w-full "> 
+    
+    {/* Might be this margintop  */}
 
     <video 
-      className="object-cover h-full w-full" 
+      className="object-cover h-screen w-full" 
       src={beverlyHills} 
       autoPlay={true}
       loop 
