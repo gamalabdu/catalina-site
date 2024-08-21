@@ -16,10 +16,9 @@ const Home = () => {
     <video 
       className="object-cover h-full w-full" 
       src={beverlyHills} 
-      autoPlay 
+      autoPlay={true}
       loop 
       muted 
-      controls={false}
     />
 
 
