@@ -64,6 +64,8 @@ const Contact = () => {
         </p>
       </div>
 
+
+
       <div className="w-full text-center text-sm text-neutral-600 mb-4"> (Click image to copy address) </div>
 
       <div className="flex flex-col lg:flex-row gap-4">
@@ -89,6 +91,9 @@ const Contact = () => {
               Copy Address
             </button>
           </div>
+
+          <div className="w-full text-center mt-2 font-semibold">Telephone: (310) 887-1401 </div>
+
         </div>
 
         {/* Map for Beverly Hills */}
@@ -126,6 +131,7 @@ const Contact = () => {
               Copy Address
             </button>
           </div>
+          <div className="w-full text-center mt-2 font-semibold"> Telephone: (310)887-1401 </div>
         </div>
 
         {/* Map for La Jolla */}
