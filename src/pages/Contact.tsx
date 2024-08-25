@@ -1,23 +1,18 @@
-
 import { useEffect, useState } from "react";
 import beverlyHills from "../assets/beverlyhills1.jpeg";
 import laJolla from "../assets/lajolla.jpg";
-import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
 const Contact = () => {
-
-
-
   useEffect(() => {
     // Set the tab title when this component is mounted
     document.title = "Leff Law Group - Contact";
   }, []);
 
-
   const [toast, setToast] = useState("");
 
-   const position1 : [number, number] = [34.07126300316557, -118.40242592256439]
-   const position2 : [number, number] = [32.84675959921757, -117.27594914467083]
+  const position1: [number, number] = [34.07126300316557, -118.40242592256439];
+  const position2: [number, number] = [32.84675959921757, -117.27594914467083];
 
   const handleCopy = (address: string) => {
     navigator.clipboard.writeText(address);
@@ -33,40 +28,50 @@ const Contact = () => {
         </h1>
 
         <p className="text-md text-gray-800 pb-4 font-semibold">
-          At Leff Law Group, we take pride in serving our clients from two of
-          California's most prestigious and iconic locations. Whether you're
-          nestled in the tranquil, coastal enclave of La Jolla or the glamorous,
-          world-renowned streets of Beverly Hills, our commitment to exceptional
-          legal service remains unwavering.
+          At Leff Law Group, we take great pride in providing our legal services
+          from two of California's most esteemed and recognizable locations.
+          Whether you find yourself in the serene coastal community of La Jolla
+          or the illustrious and globally recognized streets of Beverly Hills,
+          our dedication to delivering outstanding legal assistance remains
+          steadfast.
         </p>
 
         <p className="text-md text-gray-800 pb-4 mt-2 font-semibold">
-          Our <b>La Jolla</b> office, situated in the heart of San Diego County,
-          offers a serene environment where you can confidently address your
-          legal needs against the backdrop of stunning ocean views and coastal
-          charm. This location is ideal for clients seeking the peace and
-          expertise of a boutique law firm with the resources of a metropolitan
-          powerhouse.
+          Our <b>La Jolla</b> office, located in the center of San Diego County,
+          is conveniently positioned near the San Diego/Mexico border, making it
+          an ideal hub for serving cross-border businesses with Mexico. We also
+          specialize in NAFTA visas and other immigration needs related to
+          global and border business. This location is perfect for clients who
+          seek the personalized attention of a boutique law firm while
+          benefiting from the resources of an international metropolitan leader.
+          Additionally, we are committed to combating human trafficking through
+          humanitarian visas, a pressing issue at our borders. Our firm is
+          equipped with a dedicated team that specializes in appellate
+          litigation within the Ninth Circuit, specifically for individuals who
+          are currently detained.
         </p>
 
         <p className="text-md text-gray-800 pb-4 mt-2 font-semibold">
-          In contrast, our <b>Beverly Hills </b> office is located within one of
-          the most affluent and vibrant communities in the world. Here, our team
-          provides cutting-edge legal solutions in a dynamic, fast-paced
-          setting, reflecting the energy and sophistication of the city itself.
+          Our <b>Beverly Hills </b> office is situated in one of the most
+          prosperous and lively communities worldwide. In this vibrant
+          environment, our team offers innovative visa legal solutions tailored
+          to the fast-paced entertainment industry, mirroring the city's energy
+          and sophistication.
         </p>
 
         <p className="text-md text-gray-800 pb-4 mt-2 font-semibold">
-          At both locations, our experienced attorneys are dedicated to
-          delivering personalized, strategic, and results-driven counsel. We
-          invite you to visit us at the location most convenient for you and
-          discover how Leff Law Group can assist you with your legal needs.
+          At both locations, our skilled attorneys are devoted to providing
+          personalized, strategic, and results-oriented legal counsel. We
+          encourage you to visit the office that is most convenient for you and
+          explore how Leff Law Group can support your legal requirements. Please
+          contact us today to schedule an appointment
         </p>
       </div>
 
-
-
-      <div className="w-full text-center text-sm text-neutral-600 mb-4"> (Click image to copy address) </div>
+      <div className="w-full text-center text-sm text-neutral-600 mb-4">
+        {" "}
+        (Click image to copy address){" "}
+      </div>
 
       <div className="flex flex-col lg:flex-row gap-4">
         {/* Beverly Hills Image with Overlay */}
@@ -82,9 +87,7 @@ const Contact = () => {
             </p>
             <button
               onClick={() =>
-                handleCopy(
-                  "9440 S Santa Monica Blvd, Beverly Hills, CA 90210"
-                )
+                handleCopy("9440 S Santa Monica Blvd, Beverly Hills, CA 90210")
               }
               className="bg-blue-950 text-white px-4 py-2 rounded hover:bg-blue-900"
             >
@@ -92,8 +95,9 @@ const Contact = () => {
             </button>
           </div>
 
-          <div className="w-full text-center mt-2 font-semibold">Telephone: (310) 887-1401 </div>
-
+          <div className="w-full text-center mt-2 font-semibold">
+            Telephone: (310) 887-1401{" "}
+          </div>
         </div>
 
         {/* Map for Beverly Hills */}
@@ -131,7 +135,10 @@ const Contact = () => {
               Copy Address
             </button>
           </div>
-          <div className="w-full text-center mt-2 font-semibold"> Telephone: (310)887-1401 </div>
+          <div className="w-full text-center mt-2 font-semibold">
+            {" "}
+            Telephone: (310)887-1401{" "}
+          </div>
         </div>
 
         {/* Map for La Jolla */}
