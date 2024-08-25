@@ -1,8 +1,17 @@
 
+import { useEffect } from 'react';
 import areasOfPracticePhoto from '../assets/areasofpractice.jpg'
 import AreasOfPractice from "./AreasOfPractice";
 
 const Practices = () => {
+
+
+  useEffect(() => {
+    // Set the tab title when this component is mounted
+    document.title = "Leff Law Group - Area's Of Practice";
+  }, []);
+
+
   return (
     <div className="h-[calc(100vh-60px)] w-full mt-[60px] flex flex-col items-center align-middle">
 

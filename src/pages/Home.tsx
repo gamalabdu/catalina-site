@@ -3,10 +3,16 @@ import beverlyHills from '../assets/beverlyHills.mp4'
 import lawLogo3 from '../assets/lawLogo3.png'
 import './styles.css'
 import { FaLocationDot } from "react-icons/fa6";
+import { useEffect } from 'react';
 
 const Home = () => {
 
     const navigate = useNavigate()
+
+    useEffect(() => {
+      // Set the tab title when this component is mounted
+      document.title = "Leff Law Group - Home";
+    }, []);
 
 
   return (
