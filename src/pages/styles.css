@@ -1,5 +1,5 @@
 .law-logo {
     filter: invert(100%) sepia(100%) saturate(25%) hue-rotate(13deg) brightness(105%) contrast(108%);
-    height: 150px;
-    width: 150px;
+    /* height: 150px;
+    width: 150px; */
 }

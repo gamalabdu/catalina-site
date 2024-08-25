@@ -27,7 +27,12 @@ const Home = () => {
 
      <div className="absolute top-0 left-0 w-full h-screen flex flex-col items-center justify-center text-white bg-black bg-opacity-50 gap-10">
 
-        <img src={lawLogo3} alt="Logo" className='law-logo' />
+
+        <img 
+          src={lawLogo3} 
+          alt="Logo" 
+          className='law-logo w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 xl:w-40 xl:h-40' 
+        />
 
         <h1 className="text-4xl font-bold">Leff Law Group</h1>
 

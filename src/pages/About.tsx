@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+
 import catalinaPhoto from '../assets/catalina.png'
 import "leaflet/dist/leaflet.css";
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
@@ -17,7 +18,6 @@ const About = () => {
   return (
     <div className="h-[calc(100vh-60px)] w-full mt-[60px] p-5">
       <div className="flex flex-col lg:flex-row h-full w-full gap-6">
-        
         {/* About Section */}
         <div className="w-full lg:w-[70%] bg-white p-8 rounded-lg">
           <div className="relative">
@@ -27,8 +27,10 @@ const About = () => {
               alt="Lawyer"
               className="w-full lg:w-[300px] h-auto mb-4 lg:mb-2 lg:float-left lg:mr-4 rounded-lg"
             />
-            <div className="text-lg text-gray-800 p-4">
-              <h1 className="text-3xl font-bold text-gray-900 mb-4">About Our Firm</h1>
+            <div className="text-lg text-gray-800">
+              <h1 className="text-3xl font-bold text-gray-900 mb-4">
+                About Our Firm
+              </h1>
               <p className="mb-4">
                 With over two decades of expertise in immigration law, Catalina
                 Leff offers invaluable guidance and expertise on employee visas
@@ -82,26 +84,43 @@ const About = () => {
                 before the 9th circuit.
               </p>
 
-              <div className="flex justify-evenly items-center gap-2 p-2 h-auto">
-              <img src={lawAward1} alt="Law Award 1" className="w-32 h-32 object-cover rounded-md" />
-                <img src={lawAward2} alt="Law Award 2" className="w-32 h-32 object-cover rounded-md" />
-                <img src={lawAward3} alt="Law Award 3" className="w-32 h-32 object-cover rounded-md" />
+              <div className="flex flex-wrap justify-evenly items-center gap-2">
+                <img
+                  src={lawAward1}
+                  alt="Law Award 1"
+                  className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-cover rounded-md"
+                />
+                <img
+                  src={lawAward2}
+                  alt="Law Award 2"
+                  className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-cover rounded-md"
+                />
+                <img
+                  src={lawAward3}
+                  alt="Law Award 3"
+                  className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-cover rounded-md"
+                />
               </div>
-              
+
+
             </div>
           </div>
         </div>
 
         {/* Maps and Services Section */}
         <div className="flex flex-col justify-start items-center w-full lg:w-[30%] p-4 gap-6">
-
           {/* Map Container 1 */}
           <div className="w-full h-[200px] sm:h-[300px] mb-6">
-            <div className='font-semibold text-sm'>9440 S Santa Monica Blvd, Beverly Hills, CA 90210</div>
-            <MapContainer center={position1} zoom={15} scrollWheelZoom={false} className="w-full h-full rounded-lg z-0">
-              <TileLayer
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
+            <div className="font-semibold text-sm">
+              9440 S Santa Monica Blvd, Beverly Hills, CA 90210
+            </div>
+            <MapContainer
+              center={position1}
+              zoom={15}
+              scrollWheelZoom={false}
+              className="w-full h-full rounded-lg z-0"
+            >
+              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
               <Marker position={position1}>
                 <Popup>9440 S Santa Monica Blvd, Beverly Hills, CA 90210</Popup>
               </Marker>
@@ -110,11 +129,16 @@ const About = () => {
 
           {/* Map Container 2 */}
           <div className="w-full h-[200px] sm:h-[300px] mb-6">
-            <div className='font-semibold text-sm'>888 Prospect St, La Jolla, CA 92037</div>
-            <MapContainer center={position2} zoom={15} scrollWheelZoom={false} className="w-full h-full rounded-lg z-0">
-              <TileLayer
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
+            <div className="font-semibold text-sm">
+              888 Prospect St, La Jolla, CA 92037
+            </div>
+            <MapContainer
+              center={position2}
+              zoom={15}
+              scrollWheelZoom={false}
+              className="w-full h-full rounded-lg z-0"
+            >
+              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
               <Marker position={position2}>
                 <Popup>888 Prospect St, La Jolla, CA 92037</Popup>
               </Marker>
@@ -123,12 +147,19 @@ const About = () => {
 
           {/* Services Section */}
           <h1 className="underline font-bold text-xl mb-4">Our Services</h1>
-          <div className="bg-blue-950 flex flex-col gap-5 p-2 rounded-md w-full text-md font-bold text-neutral-100 text-left">
-            <Link to="/areasofpractice" className="hover:underline">Employment-Based Immigration </Link>
-            <Link to="/areasofpractice" className="hover:underline"> Non-Immigrant Options through Employment or Investment </Link>
-            <Link to="/areasofpractice" className="hover:underline">Permanent Residency Through Employment, Self-Petition or Investment</Link>
+          <div className="bg-blue-950 flex flex-col gap-5 p-6 rounded-md w-full text-md font-bold text-neutral-100 text-left">
+            <Link to="/areasofpractice" className="hover:underline">
+              Employment-Based Immigration{" "}
+            </Link>
+            <Link to="/areasofpractice" className="hover:underline">
+              {" "}
+              Non-Immigrant Options through Employment or Investment{" "}
+            </Link>
+            <Link to="/areasofpractice" className="hover:underline">
+              Permanent Residency Through Employment, Self-Petition or
+              Investment
+            </Link>
           </div>
-
         </div>
       </div>
     </div>

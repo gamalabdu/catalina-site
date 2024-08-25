@@ -7,7 +7,7 @@ import {
 
 const AreasOfPractice = () => {
   return (
-    <Accordion type="single" collapsible>
+    <Accordion type="single" collapsible className="text-lg">
       <AccordionItem value="item-1">
         <AccordionTrigger>I. Employment-Based Immigration</AccordionTrigger>
         <AccordionContent className="p-2">
