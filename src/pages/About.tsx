@@ -35,7 +35,7 @@ const About = () => {
               <h1 className="text-3xl font-bold text-gray-900 mb-4">
                 About Our Firm
               </h1>
-              <p className="mb-4">
+              <p className="mb-4 font-semibold">
                 With over two decades of expertise in immigration law, Catalina
                 Leff offers invaluable guidance and expertise on employee visas
                 to numerous companies situated near the San Diego-Mexico border,
@@ -43,7 +43,7 @@ const About = () => {
                 Canada.
               </p>
 
-              <p className="mb-4">
+              <p className="mb-4 font-semibold">
                 Currently serving as Of Counsel for several law firms thorough
                 the United States she provides insights on a wide range of
                 business immigration issues, including investment visas, work
@@ -58,7 +58,7 @@ const About = () => {
                 EB-5 program.
               </p>
 
-              <p className="mb-4">
+              <p className="mb-4 font-semibold">
                 After graduating from law school, Ms. Leff began her
                 professional journey as a private defense attorney for
                 immigrants facing deportation, dedicating a significant portion
@@ -74,7 +74,7 @@ const About = () => {
                 Against Women Act (VAWA).
               </p>
 
-              <p className="mb-4">
+              <p className="mb-4 font-semibold">
                 Attorney Leff also remains committed to aiding these vulnerable
                 populations whenever her schedule allows. She is licensed to
                 practice in the Supreme Court of California and the Ninth
