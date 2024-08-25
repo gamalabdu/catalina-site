@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import catalinaPhoto from '../assets/catalinaPhoto2.png'
 import "leaflet/dist/leaflet.css";
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
-import lawAward1 from '../assets/lawAward2.jpeg'
-import lawAward2 from '../assets/lawAward3.jpg'
-import lawAward3 from '../assets/lawAward3.png'
+// import lawAward1 from '../assets/lawAward2.jpeg'
+// import lawAward2 from '../assets/lawAward3.jpg'
+// import lawAward3 from '../assets/lawAward3.png'
 import { useEffect } from "react";
 
 const About = () => {
