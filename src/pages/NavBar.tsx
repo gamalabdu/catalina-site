@@ -12,7 +12,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-blue-950 text-neutral-100 font-semibold h-[60px] fixed top-0 w-full z-10 flex items-center justify-between px-4 lg:px-8">
+    <nav className="bg-blue-950 text-neutral-100 font-semibold h-[60px] fixed top-0 w-full z-50 flex items-center justify-between px-4 lg:px-8">
 
 
       <div className="w-full flex items-center justify-between">

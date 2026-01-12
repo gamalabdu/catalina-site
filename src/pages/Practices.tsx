@@ -8,25 +8,24 @@ const Practices = () => {
 
   useEffect(() => {
     // Set the tab title when this component is mounted
-    document.title = "Leff Law Group - Area's Of Practice";
+    document.title = "Leff Law Group - Areas Of Practice";
   }, []);
 
 
   return (
-    <div className="h-[calc(100vh-60px)] w-full mt-[60px] flex flex-col items-center align-middle">
-
-      <div className="object-contain">
-
-        <img className="h-[250px] w-screen object-cover" src={areasOfPracticePhoto} />
-
+    <div className="w-full">
+      {/* Hero Image Section */}
+      <div className="relative w-full h-[300px] lg:h-[400px] overflow-hidden">
+        <img 
+          className="w-full h-full object-cover" 
+          src={areasOfPracticePhoto} 
+          alt="Areas of Practice"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent"></div>
       </div>
 
-
-      <div className="w-[90%] p-4">
-            <AreasOfPractice />
-      </div>
-
-
+      {/* Content Section */}
+      <AreasOfPractice />
     </div>
   );
 };
